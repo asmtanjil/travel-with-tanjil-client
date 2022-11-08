@@ -1,8 +1,9 @@
 import React from 'react';
+import './Footer.css'
 
 const Footer = () => {
   return (
-    <div>
+    <div className='footer max-w-7xl mx-auto'>
       <footer className="footer footer-center p-10 bg-black text-white rounded">
         <div className="grid grid-flow-col gap-4">
           <a href='/' className="link link-hover">About us</a>
