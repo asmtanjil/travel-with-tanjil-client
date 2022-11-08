@@ -31,7 +31,58 @@ const ServiceDetails = () => {
           </div>
         </div>
 
+        <div className='mr-4'>
+          <h2 className='text-2xl font-bold my-4 text-center'>Reviews From Users</h2>
 
+          <div className='p-4 border-2 mb-4'>
+            <div className='flex justify-start gap-4'>
+              <img className='rounded-full' style={{ width: 40, height: 40 }} src={reviews.rev1.img} alt="" />
+              <p className='font-semibold'>{reviews.rev1.name}</p>
+            </div>
+            <p className='my-4'>{reviews.rev1.message}</p>
+            <p className='text-gray-500 my-2'>Rating: {reviews.rev1.rating}</p>
+          </div>
+
+          <div className='p-4 border-2 mb-4'>
+            <div className='flex justify-start gap-4'>
+              <img className='rounded-full' style={{ width: 40, height: 40 }} src={reviews.rev2.img} alt="" />
+              <p className='font-semibold'>{reviews.rev2.name}</p>
+            </div>
+            <p className='my-4'>{reviews.rev2.message}</p>
+            <p className='text-gray-500 my-2'>Rating: {reviews.rev2.rating}</p>
+          </div>
+
+          <div className='p-4 border-2 mb-4'>
+            <div className='flex justify-start gap-4'>
+              <img className='rounded-full' style={{ width: 40, height: 40 }} src={reviews.rev3.img} alt="" />
+              <p className='font-semibold'>{reviews.rev3.name}</p>
+            </div>
+            <p className='my-4'>{reviews.rev3.message}</p>
+            <p className='text-gray-500 my-2'>Rating: {reviews.rev3.rating}</p>
+          </div>
+
+          <div className='p-4 border-2 mb-4'>
+            <div className='flex justify-start gap-4'>
+              <img className='rounded-full' style={{ width: 40, height: 40 }} src={reviews.rev4.img} alt="" />
+              <p className='font-semibold'>{reviews.rev4.name}</p>
+            </div>
+            <p className='my-4'>{reviews.rev4.message}</p>
+            <p className='text-gray-500 my-2'>Rating: {reviews.rev4.rating}</p>
+          </div>
+
+          {
+            user?.email ?
+              <div>
+                <form className="form-control">
+                  <textarea name='review' className="textarea textarea-bordered w-full h-40" placeholder="Write Your Reviews"></textarea>
+                  <input className='btn btn-primary my-2 text-white' type="submit" value="Post Your Review" />
+                </form>
+              </div>
+              :
+              <p className='text-xl'>Please <Link to='/login' className='font-semibold text-amber-500'>Login</Link> to Post Your Review</p>
+          }
+
+        </div>
       </div>
     </PhotoProvider>
   );
