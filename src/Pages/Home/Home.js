@@ -20,7 +20,7 @@ const Home = () => {
           ></ServiceCard>)
         }
       </div>
-      <p className='text-center mt-12 mb-20'><button className='btn btn-primary'><Link to='/services'>See All Services</Link></button></p>
+      <p className='text-center mt-12 mb-20'><button className='btn btn-primary text-white'><Link to='/services'>See All Services</Link></button></p>
       <div>
         <div className="hero min-h-screen" style={{ backgroundImage: `url("https://i.ibb.co/tXTqxnB/couple.jpg")` }}>
           <div className="hero-overlay bg-opacity-60"></div>
@@ -28,7 +28,7 @@ const Home = () => {
             <div className="max-w-md">
               <h1 className="mb-5 text-5xl font-bold">Travell With Tanjil</h1>
               <p className="mb-5">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
-              <button className="btn btn-primary"><Link to='/services'>Start Exploring</Link></button>
+              <button className="btn btn-primary text-white"><Link to='/services'>Start Exploring</Link></button>
             </div>
           </div>
         </div>

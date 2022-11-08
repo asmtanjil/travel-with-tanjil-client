@@ -40,7 +40,9 @@ const Header = () => {
             {navMenu}
           </ul>
         </div>
-        <Link to='/' className="btn btn-ghost normal-case text-xl"> <img style={{ width: 30, height: 30 }} src={logo} alt="" /> <span className='mx-2'>Travel With Tanjil</span> </Link>
+        <Link to='/' className="btn btn-ghost normal-case text-xl">
+          <img style={{ width: 30, height: 30 }} src={logo} alt="" />
+          <span className='mx-2 text-2xl'>Travel With Tanjil</span> </Link>
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal p-0">

@@ -1,10 +1,13 @@
-import React from 'react';
-import { useLoaderData } from 'react-router-dom';
+import React, { useContext } from 'react';
+import { Link, useLoaderData } from 'react-router-dom';
 import { PhotoProvider, PhotoView } from 'react-photo-view';
 import 'react-photo-view/dist/react-photo-view.css';
+import { AuthContext } from '../../Contexts/AuthProvider/AuthProvider';
 
 const ServiceDetails = () => {
-  const { image, details, title, rating, price } = useLoaderData();
+  const { image, details, title, rating, price, reviews } = useLoaderData();
+  console.log(reviews)
+  const { user } = useContext(AuthContext)
 
   return (
     <PhotoProvider>
@@ -30,6 +33,27 @@ const ServiceDetails = () => {
         </div>
 
         <div>
+          <h2 className='text-2xl font-bold m-2 text-center'>Reviews From Users</h2>
+          {reviews?.rev &&
+            <>
+              <p>{reviews.rev.name}</p>
+              <img src={reviews.rev.img} alt="" />
+              <p>{reviews.rev.message}</p>
+              <p>rating</p>
+            </>
+          }
+
+          {
+            user?.email ?
+              <div>
+                <form className="form-control mr-4">
+                  <textarea name='review' className="textarea textarea-bordered w-full h-40" placeholder="Write Your Reviews"></textarea>
+                  <input className='btn btn-primary my-2 text-white' type="submit" value="Post Your Review" />
+                </form>
+              </div>
+              :
+              <p className='text-xl'>Please <Link to='/login' className='font-semibold text-amber-500'>Login</Link> to Post Your Review</p>
+          }
 
         </div>
       </div>

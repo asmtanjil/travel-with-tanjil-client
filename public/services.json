@@ -4,41 +4,197 @@
     "image": "https://i.ibb.co/TmFR3Hv/nepal.jpg",
     "rating": "4.5",
     "price": "18000",
-    "details": "The flight time between Dhaka (DAC) and Kathmandu (KTM) is around 1h 32m and covers a distance of around 662 km. Services are operated by Himalaya and Biman Bangladesh Airlines. Typically 10 flights run weekly, although weekend and holiday schedules can vary so check in advance.There is widespread community transmission globally.Some travel restrictions are being lifted in Nepal. For the latest travel status, please check the official page for Nepal.Kathmandu, also spelled Katmandu or Kantipur, capital of Nepal. It lies in a hilly region near the confluence of the Baghmati and Vishnumati rivers, at an elevation of 4,344 feet (1,324 metres) above sea level.It was founded in 723 by Raja Gunakamadeva. Its early name was Manju-Patan; the present name refers to a wooden temple (kath, “wood”; mandir, “temple” or “edifice”) said to have been built from the wood of a single tree by Raja Lachmina Singh in 1596. A building, supposedly the original, still stands in the central square and is used for the accommodation of sadhus (holy men). Kathmandu served as the seat of the ruling Shah family of the Gurkha people from 1768 to 2008.The city has become the country’s most important business and commercial centre through the efforts of its Newar merchant families. In the 1970s the construction of new roads and the expansion of air service were centred upon Kathmandu, making it the hub of the national transportation system, which for centuries was limited to footpaths. Many of the townspeople are engaged in agriculture, the Newar preferring to live in the city. Tribhuvan University was chartered in 1959."
-  },
-  {
-    "title": "Kashmir Couple Package for 15 Days From Dhaka",
-    "image": "https://i.ibb.co/M6Qk355/kashmir.jpg",
-    "rating": "4.5",
-    "price": "80000",
-    "details": "We at My Vision Kashmir Tour & Travels provide you with the best Holiday Packages for Kashmir, Leh - Ladakh, Just pick any Holiday Package and leave all the rest to us. We make sure that you get the best value for your money. We will provide you with the best possible prices to suit your pocket without compromising on the service. We assure you of our best services and hospitality. A holiday with My Vision Kashmir Tour & Travels will be a lifetime memory that you will cherish all your life.Srinagar, city, summer capital of Jammu and Kashmir union territory (Jammu is the winter capital), northern India, situated in the Kashmir region of the Indian subcontinent. The city lies along the banks of the Jhelum River at an elevation of 5,200 feet (1,600 metres) in the Vale of Kashmir.Gulmarg is a town nestled in the Pir Panjal range of the Western Himalayas at an altitude of 8,690 feet above sea level. Literally translated as 'Meadow of Flowers' it is encased by glimmering snow peaked alps, verdant green pastures, colorful meadows, deep valleys and pine covered slopes.Pahalgam is famous for its scenic beauty and is the jewel of the picturesque Liddar valley located in the high Himalayas. It provides an ideal setting for activities like hiking, trekking, and fishing. It is also the starting point of the annual pilgrimage to the holy cave of Amarnath.Sonmarg has ancient importance because it was a gateway on the ancient Silk Road that connects Kashmir with China. It provides as a base camp for Ladakh and is militarily very important for India. In the winter, Sonamarg becomes a valley covered in white gold thereby living up to its name."
+    "details": "The flight time between Dhaka (DAC) and Kathmandu (KTM) is around 1h 32m and covers a distance of around 662 km. Services are operated by Himalaya and Biman Bangladesh Airlines. Typically 10 flights run weekly, although weekend and holiday schedules can vary so check in advance.There is widespread community transmission globally.Some travel restrictions are being lifted in Nepal. For the latest travel status, please check the official page for Nepal.Kathmandu, also spelled Katmandu or Kantipur, capital of Nepal. It lies in a hilly region near the confluence of the Baghmati and Vishnumati rivers, at an elevation of 4,344 feet (1,324 metres) above sea level.It was founded in 723 by Raja Gunakamadeva. Its early name was Manju-Patan; the present name refers to a wooden temple (kath, “wood”; mandir, “temple” or “edifice”) said to have been built from the wood of a single tree by Raja Lachmina Singh in 1596. A building, supposedly the original, still stands in the central square and is used for the accommodation of sadhus (holy men). Kathmandu served as the seat of the ruling Shah family of the Gurkha people from 1768 to 2008.The city has become the country’s most important business and commercial centre through the efforts of its Newar merchant families. In the 1970s the construction of new roads and the expansion of air service were centred upon Kathmandu, making it the hub of the national transportation system, which for centuries was limited to footpaths. Many of the townspeople are engaged in agriculture, the Newar preferring to live in the city. Tribhuvan University was chartered in 1959.",
+    "reviews": {
+      "rev1": {
+        "name": "Tarek Mahmud",
+        "message": "This trip really amazing. I was really impressed at tanjil's service. Didn't face any problem during this trip.",
+        "img": "https://i.ibb.co/p17rX9R/salman.jpg",
+        "rating": "4.5"
+      },
+      "rev2": {
+        "name": "Adrita Ahmed",
+        "message": "We had a brilliant time - Kathmandu is such an amazing city to explore. We loved every second!",
+        "img": "https://i.ibb.co/fD16yDt/Sai-Pallavi-1.jpg",
+        "rating": "4.5"
+      },
+      "rev3": {
+        "name": "Rubayat Ferdaus",
+        "message": "Great activities, wonderful guides and great hotels",
+        "img": "https://i.ibb.co/p17rX9R/salman.jpg",
+        "rating": "4.5"
+      },
+      "rev4": {
+        "name": "Anika Chowdhury",
+        "message": "Travel With Tanjil provided the perfect honeymoon, traveling around kathmandu. We couldn't have asked for a more perfect trip.",
+        "img": "https://i.ibb.co/fD16yDt/Sai-Pallavi-1.jpg",
+        "rating": "4.5"
+      }
+    }
   },
   {
     "title": "Darjeeling Trip for 7 Days For Per Person",
     "image": "https://i.ibb.co/ZXpnH3t/darjeeling.jpg",
     "rating": "4.5",
     "price": "15000",
-    "details": "Nestled among the rolling mountains with the glistening Mt Kanchenjunga towering over the azure sky, Darjeeling fondly called “Queen of the Hills”, provides a perfect gateway for those seeking to be in harmony with nature. This is the land of the muscatel flavored Darjeeling tea revered by connoisseurs across the globe. This is the land of the world heritage Darjeeling Himalayan Railway where the century old miniature steam engine still chugs uphill vying for space with the fast disappearing Land Rovers. “Flowers are everywhere. The days are cold and the sun almost seems to play hide and seek with us”. – Kabiguru Rabindranath Tagore. It is certainly that Darjeeling in the post modern era comprises of six T’s -Tea, Teak, Tourism, Toy Train, Tiger Hill and Trekkers’ paradise.The previous summer capital of India under the British Raj, Darjeeling has come off age as one of the most sought after hill stations in India. Located in West Bengal, this scenic hill station is the perfect getaway for a romantic honeymoon. Nestled amidst acres of tea plantations, Darjeeling stands at the height of 2,050 meters above sea level, thus boasting a cool climate all year round.The toy train established back in 1881 is conferred the title of World Heritage Status by UNESCO. The train begins its journey from the plains and rises to over 2000 metres above sea level, offering breathtaking views of the mountains as it chugs along.Over 86 tea estates in Darjeeling are responsible for producing the worldwide famous 'Darjeeling Tea'. Have a cup of locally brewed chai at the tea estate, or get down amidst the plantations to pluck a few tea leaves yourself; you are free to take your pick.The third highest peak in the world and the highest in India, the Kanchenjunga peak, is visible from here, and you can enjoy a panoramic view of the peak. Some of Darjeeling's most popular attractions include monasteries, botanical gardens, a zoo, and the Darjeeling-Rangeet Valley Passenger Ropeway cable car, which is the longest Asian cable car. Tiger Hill is a fantastic spot to see the sunrise over the mountains in all its fiery glory."
+    "details": "Nestled among the rolling mountains with the glistening Mt Kanchenjunga towering over the azure sky, Darjeeling fondly called “Queen of the Hills”, provides a perfect gateway for those seeking to be in harmony with nature. This is the land of the muscatel flavored Darjeeling tea revered by connoisseurs across the globe. This is the land of the world heritage Darjeeling Himalayan Railway where the century old miniature steam engine still chugs uphill vying for space with the fast disappearing Land Rovers. “Flowers are everywhere. The days are cold and the sun almost seems to play hide and seek with us”. – Kabiguru Rabindranath Tagore. It is certainly that Darjeeling in the post modern era comprises of six T’s -Tea, Teak, Tourism, Toy Train, Tiger Hill and Trekkers’ paradise.The previous summer capital of India under the British Raj, Darjeeling has come off age as one of the most sought after hill stations in India. Located in West Bengal, this scenic hill station is the perfect getaway for a romantic honeymoon. Nestled amidst acres of tea plantations, Darjeeling stands at the height of 2,050 meters above sea level, thus boasting a cool climate all year round.The toy train established back in 1881 is conferred the title of World Heritage Status by UNESCO. The train begins its journey from the plains and rises to over 2000 metres above sea level, offering breathtaking views of the mountains as it chugs along.Over 86 tea estates in Darjeeling are responsible for producing the worldwide famous 'Darjeeling Tea'. Have a cup of locally brewed chai at the tea estate, or get down amidst the plantations to pluck a few tea leaves yourself; you are free to take your pick.The third highest peak in the world and the highest in India, the Kanchenjunga peak, is visible from here, and you can enjoy a panoramic view of the peak. Some of Darjeeling's most popular attractions include monasteries, botanical gardens, a zoo, and the Darjeeling-Rangeet Valley Passenger Ropeway cable car, which is the longest Asian cable car. Tiger Hill is a fantastic spot to see the sunrise over the mountains in all its fiery glory.",
+    "reviews": {
+      "rev1": {
+        "name": "Tarek Mahmud",
+        "message": "This trip really amazing. I was really impressed at tanjil's service. Didn't face any problem during this trip.",
+        "img": "https://i.ibb.co/p17rX9R/salman.jpg",
+        "rating": "4.5"
+      },
+      "rev2": {
+        "name": "Adrita Ahmed",
+        "message": "We had a brilliant time - Darjeeling is such an amazing city to explore. We loved every second!",
+        "img": "https://i.ibb.co/fD16yDt/Sai-Pallavi-1.jpg",
+        "rating": "4.5"
+      },
+      "rev3": {
+        "name": "Rubayat Ferdaus",
+        "message": "Great activities, wonderful guides and great hotels",
+        "img": "https://i.ibb.co/p17rX9R/salman.jpg",
+        "rating": "4.5"
+      },
+      "rev4": {
+        "name": "Anika Chowdhury",
+        "message": "Travel With Tanjil provided the perfect honeymoon, traveling around Darjeeling. We couldn't have asked for a more perfect trip.",
+        "img": "https://i.ibb.co/fD16yDt/Sai-Pallavi-1.jpg",
+        "rating": "4.5"
+      }
+    }
   },
   {
     "title": "Couple Package Of Saint Martin from Dhaka",
     "image": "https://i.ibb.co/R2jSvGK/saint.jpg",
     "rating": "4.6",
     "price": "16000",
-    "details": "St. Martin's Island (Bengali: সেন্ট মার্টিন্স দ্বীপ) is a small island (area only 3 km2) in the northeastern part of the Bay of Bengal, about 9 km south of the tip of the Cox's Bazar-Teknaf peninsula, and forming the southernmost part of Bangladesh. There is a small adjoining island that is separated at high tide, called Chera Dwip. It is about 8 kilometres (5 miles) west of the northwest coast of Myanmar, at the mouth of the Naf River.Millennia ago, the island used to be an extension of the Teknaf peninsula, but at a later time some portion of this peninsula got submerged and thus the southernmost part of the aforementioned peninsula became an island, and was disconnected from the Bangladesh mainland. The first settlement started 250 years ago, in 18th century, by Arabian merchants who named the island 'Jazira'. During British occupation the island was named after the then Deputy Commissioner of Chittagong Mr. Martin as St. Martin Island. Likely because one or more of the Arabs were Saint and whose name could not be identified. Local names of the island are Narikel jinjira which means Coconut Island, and Daruchini Dwip which means Cinnamon island. It is the only coral island in Bangladeshdetails: St. Martin's Island (Bengali: সেন্ট মার্টিন্স দ্বীপ) is a small island (area only 3 km2) in the northeastern part of the Bay of Bengal, about 9 km south of the tip of the Cox's Bazar-Teknaf peninsula, and forming the southernmost part of Bangladesh. There is a small adjoining island that is separated at high tide, called Chera Dwip. It is about 8 kilometres (5 miles) west of the northwest coast of Myanmar, at the mouth of the Naf River.Millennia ago, the island used to be an extension of the Teknaf peninsula, but at a later time some portion of this peninsula got submerged and thus the southernmost part of the aforementioned peninsula became an island, and was disconnected from the Bangladesh mainland. The first settlement started 250 years ago, in 18th century, by Arabian merchants who named the island 'Jazira'. During British occupation the island was named after the then Deputy Commissioner of Chittagong Mr. Martin as St. Martin Island. Likely because one or more of the Arabs were Saint and whose name could not be identified. Local names of the island are Narikel jinjira which means Coconut Island, and Daruchini Dwip which means Cinnamon island. It is the only coral island in Bangladesh"
+    "details": "St. Martin's Island (Bengali: সেন্ট মার্টিন্স দ্বীপ) is a small island (area only 3 km2) in the northeastern part of the Bay of Bengal, about 9 km south of the tip of the Cox's Bazar-Teknaf peninsula, and forming the southernmost part of Bangladesh. There is a small adjoining island that is separated at high tide, called Chera Dwip. It is about 8 kilometres (5 miles) west of the northwest coast of Myanmar, at the mouth of the Naf River.Millennia ago, the island used to be an extension of the Teknaf peninsula, but at a later time some portion of this peninsula got submerged and thus the southernmost part of the aforementioned peninsula became an island, and was disconnected from the Bangladesh mainland. The first settlement started 250 years ago, in 18th century, by Arabian merchants who named the island 'Jazira'. During British occupation the island was named after the then Deputy Commissioner of Chittagong Mr. Martin as St. Martin Island. Likely because one or more of the Arabs were Saint and whose name could not be identified. Local names of the island are Narikel jinjira which means Coconut Island, and Daruchini Dwip which means Cinnamon island. It is the only coral island in Bangladeshdetails: St. Martin's Island (Bengali: সেন্ট মার্টিন্স দ্বীপ) is a small island (area only 3 km2) in the northeastern part of the Bay of Bengal, about 9 km south of the tip of the Cox's Bazar-Teknaf peninsula, and forming the southernmost part of Bangladesh. There is a small adjoining island that is separated at high tide, called Chera Dwip. It is about 8 kilometres (5 miles) west of the northwest coast of Myanmar, at the mouth of the Naf River.Millennia ago, the island used to be an extension of the Teknaf peninsula, but at a later time some portion of this peninsula got submerged and thus the southernmost part of the aforementioned peninsula became an island, and was disconnected from the Bangladesh mainland. The first settlement started 250 years ago, in 18th century, by Arabian merchants who named the island 'Jazira'. During British occupation the island was named after the then Deputy Commissioner of Chittagong Mr. Martin as St. Martin Island. Likely because one or more of the Arabs were Saint and whose name could not be identified. Local names of the island are Narikel jinjira which means Coconut Island, and Daruchini Dwip which means Cinnamon island. It is the only coral island in Bangladesh",
+    "reviews": {
+      "rev1": {
+        "name": "Tarek Mahmud",
+        "message": "This trip really amazing. I was really impressed at tanjil's service. Didn't face any problem during this trip.",
+        "img": "https://i.ibb.co/p17rX9R/salman.jpg",
+        "rating": "4.5"
+      },
+      "rev2": {
+        "name": "Adrita Ahmed",
+        "message": "We had a brilliant time - Saint Martin is such an amazing beach to explore. We loved every second!",
+        "img": "https://i.ibb.co/fD16yDt/Sai-Pallavi-1.jpg",
+        "rating": "4.5"
+      },
+      "rev3": {
+        "name": "Rubayat Ferdaus",
+        "message": "Great activities, wonderful guides and great hotels",
+        "img": "https://i.ibb.co/p17rX9R/salman.jpg",
+        "rating": "4.5"
+      },
+      "rev4": {
+        "name": "Anika Chowdhury",
+        "message": "Travel With Tanjil provided the perfect honeymoon, traveling around Saint Martin. We couldn't have asked for a more perfect trip.",
+        "img": "https://i.ibb.co/fD16yDt/Sai-Pallavi-1.jpg",
+        "rating": "4.5"
+      }
+    }
   },
   {
     "title": "Camping With Tanjil At Our Beautiful Nijhum Dwip",
     "image": "https://i.ibb.co/82QJT3b/nijhum.jpg",
     "rating": "4.8",
     "price": "5000",
-    "details": "Nijhum Dwip (Bengali: নিঝুম দ্বীপ, lit. 'Silent Island')[1] is a small island under Hatiya upazila. It is situated in Noakhali District in Bangladesh. Once it was called Char Osmani, Baluar Char, Golden Island [2]. A cluster of islands (mainly, Ballar Char, Kamlar Char, Char Osman and Char Muri) emerged in the early 1950s as an alluvium in the shallow estuary of the Bay of Bengal on the south of Noakhali. These new sandbanks first drew the notice of a group of fishermen, who named it Baular Char (literally, the alluvium of sand) later transformed into Ballar Char. Occupying an area of 14,050 acres (5,686 hectares), the island is situated between 21 0 1 / to 22 0 6 /North latitude and 90 0 3 / to 91 0 4 / East longitude.Migratory Birds in Nijhum Dwip: During winter, thousands of migratory birds flock in to island. The fishermen use the airy and sunny land as an ideal place for drying their catches from the sea. Sometimes many of them also construct straw huts on the island as seasonal residences.In 1974 the Forest Department took an afforestation program for a duration of twenty years in the north side of the island. Covering an area of nine thousand acres, it has now developed into a deep forest with a variety of plant species. Among the trees Keora is much seen. Besides this Gewa, Kankra, Bain, Babul, Karamja, Pashur and many other species are seen.On 8 April 2001 the government declared the 40,390 acres (16,345 ha) of forest of Jahajmara range including 9,550 acres (3,865 ha) of forest land on Nijhum Dwip as a National Park for the protection and development of the biodiversity of the forest. But in practice, there a very lazy appearance of that declaration."
+    "details": "Nijhum Dwip (Bengali: নিঝুম দ্বীপ, lit. 'Silent Island')[1] is a small island under Hatiya upazila. It is situated in Noakhali District in Bangladesh. Once it was called Char Osmani, Baluar Char, Golden Island [2]. A cluster of islands (mainly, Ballar Char, Kamlar Char, Char Osman and Char Muri) emerged in the early 1950s as an alluvium in the shallow estuary of the Bay of Bengal on the south of Noakhali. These new sandbanks first drew the notice of a group of fishermen, who named it Baular Char (literally, the alluvium of sand) later transformed into Ballar Char. Occupying an area of 14,050 acres (5,686 hectares), the island is situated between 21 0 1 / to 22 0 6 /North latitude and 90 0 3 / to 91 0 4 / East longitude.Migratory Birds in Nijhum Dwip: During winter, thousands of migratory birds flock in to island. The fishermen use the airy and sunny land as an ideal place for drying their catches from the sea. Sometimes many of them also construct straw huts on the island as seasonal residences.In 1974 the Forest Department took an afforestation program for a duration of twenty years in the north side of the island. Covering an area of nine thousand acres, it has now developed into a deep forest with a variety of plant species. Among the trees Keora is much seen. Besides this Gewa, Kankra, Bain, Babul, Karamja, Pashur and many other species are seen.On 8 April 2001 the government declared the 40,390 acres (16,345 ha) of forest of Jahajmara range including 9,550 acres (3,865 ha) of forest land on Nijhum Dwip as a National Park for the protection and development of the biodiversity of the forest. But in practice, there a very lazy appearance of that declaration.",
+    "reviews": {
+      "rev1": {
+        "name": "Tarek Mahmud",
+        "message": "This trip really amazing. I was really impressed at tanjil's service. Didn't face any problem during this trip.",
+        "img": "https://i.ibb.co/p17rX9R/salman.jpg",
+        "rating": "4.5"
+      },
+      "rev2": {
+        "name": "Adrita Ahmed",
+        "message": "We had a brilliant time - Nijhum Dwip is such an amazing place to camp. We loved every second!",
+        "img": "https://i.ibb.co/fD16yDt/Sai-Pallavi-1.jpg",
+        "rating": "4.5"
+      },
+      "rev3": {
+        "name": "Rubayat Ferdaus",
+        "message": "Great activities, wonderful guides and great hotels",
+        "img": "https://i.ibb.co/p17rX9R/salman.jpg",
+        "rating": "4.5"
+      },
+      "rev4": {
+        "name": "Anika Chowdhury",
+        "message": "Travel With Tanjil provided the perfect camping, traveling around Nijhum Dwip. We couldn't have asked for a more perfect trip.",
+        "img": "https://i.ibb.co/fD16yDt/Sai-Pallavi-1.jpg",
+        "rating": "4.5"
+      }
+    }
+  },
+  {
+    "title": "Kashmir Couple Package for 15 Days From Dhaka",
+    "image": "https://i.ibb.co/M6Qk355/kashmir.jpg",
+    "rating": "4.5",
+    "price": "80000",
+    "details": "We at My Vision Kashmir Tour & Travels provide you with the best Holiday Packages for Kashmir, Leh - Ladakh, Just pick any Holiday Package and leave all the rest to us. We make sure that you get the best value for your money. We will provide you with the best possible prices to suit your pocket without compromising on the service. We assure you of our best services and hospitality. A holiday with My Vision Kashmir Tour & Travels will be a lifetime memory that you will cherish all your life.Srinagar, city, summer capital of Jammu and Kashmir union territory (Jammu is the winter capital), northern India, situated in the Kashmir region of the Indian subcontinent. The city lies along the banks of the Jhelum River at an elevation of 5,200 feet (1,600 metres) in the Vale of Kashmir.Gulmarg is a town nestled in the Pir Panjal range of the Western Himalayas at an altitude of 8,690 feet above sea level. Literally translated as 'Meadow of Flowers' it is encased by glimmering snow peaked alps, verdant green pastures, colorful meadows, deep valleys and pine covered slopes.Pahalgam is famous for its scenic beauty and is the jewel of the picturesque Liddar valley located in the high Himalayas. It provides an ideal setting for activities like hiking, trekking, and fishing. It is also the starting point of the annual pilgrimage to the holy cave of Amarnath.Sonmarg has ancient importance because it was a gateway on the ancient Silk Road that connects Kashmir with China. It provides as a base camp for Ladakh and is militarily very important for India. In the winter, Sonamarg becomes a valley covered in white gold thereby living up to its name.",
+    "reviews": {
+      "rev1": {
+        "name": "Tarek Mahmud",
+        "message": "This trip really amazing. I was really impressed at tanjil's service. Didn't face any problem during this trip.",
+        "img": "https://i.ibb.co/p17rX9R/salman.jpg",
+        "rating": "4.5"
+      },
+      "rev2": {
+        "name": "Adrita Ahmed",
+        "message": "We had a brilliant time - Kashmir is such an amazing city to explore. We loved every second!",
+        "img": "https://i.ibb.co/fD16yDt/Sai-Pallavi-1.jpg",
+        "rating": "4.5"
+      },
+      "rev3": {
+        "name": "Rubayat Ferdaus",
+        "message": "Great activities, wonderful guides and great hotels",
+        "img": "https://i.ibb.co/p17rX9R/salman.jpg",
+        "rating": "4.5"
+      },
+      "rev4": {
+        "name": "Anika Chowdhury",
+        "message": "Travel With Tanjil provided the perfect honeymoon, traveling around Kashmir. We couldn't have asked for a more perfect trip.",
+        "img": "https://i.ibb.co/fD16yDt/Sai-Pallavi-1.jpg",
+        "rating": "4.5"
+      }
+    }
   },
   {
     "title": "Dhaka To Bangkok Single Way Air Services",
     "image": "https://i.ibb.co/2YWJQVz/bangkok.jpg",
     "rating": "4.5",
     "price": "22000",
-    "details": "Bangkok is undeniably one of Southeast Asia’s most exuberant capital cities. The city centre is an enticing mix of old buildings, giant shopping malls and holy shrines, which take days to fully explore. Go in search of souvenirs in the Chatuchak Market, and visit the gleaming temples of Wat Arun and the Grand Palace’s Wat Phra Kaew, the latter regarded as the most sacred Buddhist temple in Thailand.After dark, Bangkok’s legendary nightlife kicks in. Take a walk down Khaosan Road, famous for its endless selection of busy bars, restaurants and street food vendors, all packed together beneath a jumble of blinking neon lights. Pad thai is the signature dish, but eats like mango sticky rice and ‘Gieow’ – a minced pork wonton wrapped in yellow dough – are also well worth trying.Getting around in Bangkok is an attraction within itself, whether it’s balancing on the back seat of a tuk-tuk in Chinatown, or gliding among the floating markets on a long-tail boat. You can also travel by metro or on foot, and the airport is just over half an hour away by train or taxi."
+    "details": "Bangkok is undeniably one of Southeast Asia’s most exuberant capital cities. The city centre is an enticing mix of old buildings, giant shopping malls and holy shrines, which take days to fully explore. Go in search of souvenirs in the Chatuchak Market, and visit the gleaming temples of Wat Arun and the Grand Palace’s Wat Phra Kaew, the latter regarded as the most sacred Buddhist temple in Thailand.After dark, Bangkok’s legendary nightlife kicks in. Take a walk down Khaosan Road, famous for its endless selection of busy bars, restaurants and street food vendors, all packed together beneath a jumble of blinking neon lights. Pad thai is the signature dish, but eats like mango sticky rice and ‘Gieow’ – a minced pork wonton wrapped in yellow dough – are also well worth trying.Getting around in Bangkok is an attraction within itself, whether it’s balancing on the back seat of a tuk-tuk in Chinatown, or gliding among the floating markets on a long-tail boat. You can also travel by metro or on foot, and the airport is just over half an hour away by train or taxi.",
+    "reviews": {
+      "rev1": {
+        "name": "Tarek Mahmud",
+        "message": "This trip really amazing. I was really impressed at tanjil's service. Didn't face any problem during this trip.",
+        "img": "https://i.ibb.co/p17rX9R/salman.jpg",
+        "rating": "4.5"
+      },
+      "rev2": {
+        "name": "Adrita Ahmed",
+        "message": "We had a brilliant time - Bangkok is such an amazing city to explore. We loved every second!",
+        "img": "https://i.ibb.co/fD16yDt/Sai-Pallavi-1.jpg",
+        "rating": "4.5"
+      },
+      "rev3": {
+        "name": "Rubayat Ferdaus",
+        "message": "Great activities, wonderful guides and great hotels",
+        "img": "https://i.ibb.co/p17rX9R/salman.jpg",
+        "rating": "4.5"
+      },
+      "rev4": {
+        "name": "Anika Chowdhury",
+        "message": "Travel With Tanjil provided the perfect honeymoon, traveling around kathmandu. We couldn't have asked for a more perfect trip.",
+        "img": "https://i.ibb.co/fD16yDt/Sai-Pallavi-1.jpg",
+        "rating": "4.5"
+      }
+    }
   }
 ]

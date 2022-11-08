@@ -9,6 +9,7 @@ const Register = () => {
     e.preventDefault();
     const form = e.target;
     const name = form.name.value;
+    const photoURL = form.photoURL.value;
     const email = form.email.value;
     const password = form.password.value;
 
@@ -16,7 +17,7 @@ const Register = () => {
       .then(result => {
         const user = result.user;
         console.log(user)
-        updateUserProfile(name)
+        updateUserProfile(name, photoURL)
         form.reset();
       })
       .catch(err => console.error(err))
@@ -36,6 +37,13 @@ const Register = () => {
                 <span className="label-text">Name</span>
               </label>
               <input type="text" name='name' placeholder="Enter Your Full Name" className="input input-bordered" />
+            </div>
+
+            <div className="form-control">
+              <label className="label">
+                <span className="label-text">Photo URL</span>
+              </label>
+              <input type="text" name='photoURL' placeholder="Enter Image URL" className="input input-bordered" />
             </div>
 
             <div className="form-control">
