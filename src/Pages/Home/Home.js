@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
+import HomeSections from './HomeSections';
 import ServiceCard from './ServiceCard';
 
 const Home = () => {
@@ -11,7 +12,7 @@ const Home = () => {
   }, [])
   return (
     <div className='mx-4'>
-      <div className='grid gap-8 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 my-20'>
+      <div className='grid gap-8 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mt-20'>
         {
           services.map(service => <ServiceCard
             key={service._id}
@@ -19,9 +20,9 @@ const Home = () => {
           ></ServiceCard>)
         }
       </div>
-      <p className='text-center mb-20'><button className='btn btn-primary'><Link to='/services'>See All Services</Link></button></p>
+      <p className='text-center mt-12 mb-20'><button className='btn btn-primary'><Link to='/services'>See All Services</Link></button></p>
       <div>
-        <div className="hero min-h-screen" style={{ backgroundImage: `url("https://placeimg.com/1000/800/arch")` }}>
+        <div className="hero min-h-screen" style={{ backgroundImage: `url("https://i.ibb.co/tXTqxnB/couple.jpg")` }}>
           <div className="hero-overlay bg-opacity-60"></div>
           <div className="hero-content text-center text-neutral-content">
             <div className="max-w-md">
@@ -33,7 +34,7 @@ const Home = () => {
         </div>
       </div>
       <div>
-        <h3>2 MeaningFull Section</h3>
+        <HomeSections></HomeSections>
       </div>
     </div>
   );
