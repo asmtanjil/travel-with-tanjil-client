@@ -1,11 +1,25 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
+import ServiceCard from './ServiceCard';
 
 const Home = () => {
+  const [services, setServices] = useState([])
+  useEffect(() => {
+    fetch('http://localhost:5000/homeServices')
+      .then(res => res.json())
+      .then(data => setServices(data))
+  }, [])
   return (
-    <div>
-      <div>
-        <h2>3 sections</h2>
+    <div className='mx-4'>
+      <div className='grid gap-8 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 my-20'>
+        {
+          services.map(service => <ServiceCard
+            key={service._id}
+            service={service}
+          ></ServiceCard>)
+        }
       </div>
+      <p className='text-center mb-20'><button className='btn btn-primary'><Link to='/services'>See All Services</Link></button></p>
       <div>
         <div className="hero min-h-screen" style={{ backgroundImage: `url("https://placeimg.com/1000/800/arch")` }}>
           <div className="hero-overlay bg-opacity-60"></div>

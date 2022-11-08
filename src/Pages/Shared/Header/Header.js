@@ -13,6 +13,7 @@ const Header = () => {
 
   const navMenu = <>
     <li className='mx-2 font-semibold'><Link to='/'>Home</Link></li>
+    <li className='mx-2 font-semibold'><Link to='/Services'>Services</Link></li>
     <li className='mx-2 font-semibold'><Link to='/blog'>Blog</Link></li>
     {
       user?.email ?
@@ -23,13 +24,12 @@ const Header = () => {
         </>
         :
         <>
-          <li className='mx-2 font-semibold'><Link to='/signup'>Sign Up</Link></li>
           <li className='mx-2 font-semibold'><Link to='/login'>Login</Link></li>
         </>
     }
   </>
   return (
-    <div className="navbar bg-base-100">
+    <div className="navbar bg-orange-100">
       <div className="navbar-start">
         <div className="dropdown">
           <label tabIndex={0} className="btn btn-ghost lg:hidden">
