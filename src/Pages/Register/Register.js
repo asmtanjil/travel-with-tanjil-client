@@ -41,7 +41,7 @@ const Register = () => {
       </Helmet>
       {
         loading ?
-          <GridLoader color={`#50DBB4`} loading={loading} size={50} className='text-center' />
+          <GridLoader color={`#50DBB4`} loading={loading} size={50} />
           :
           <>
             <div className="hero-content ">
