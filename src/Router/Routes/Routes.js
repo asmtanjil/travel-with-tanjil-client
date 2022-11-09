@@ -26,7 +26,7 @@ const router = createBrowserRouter([
       },
       {
         path: '/serviceDetails/:id',
-        loader: ({ params }) => fetch(`http://localhost:5000/services/${params.id}`),
+        loader: ({ params }) => fetch(`https://travel-with-tanjil-server.vercel.app/services/${params.id}`),
         element: <ServiceDetails></ServiceDetails>
       },
       {

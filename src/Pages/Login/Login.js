@@ -3,6 +3,7 @@ import React, { useContext, useState } from 'react';
 import { FaBeer, FaGoogle } from 'react-icons/fa';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { AuthContext } from '../../Contexts/AuthProvider/AuthProvider';
+import { Helmet } from 'react-helmet-async';
 
 
 const Login = () => {
@@ -49,6 +50,9 @@ const Login = () => {
 
   return (
     <div className="hero w-full my-20">
+      <Helmet>
+        <title>Login - {`Travel With Tanjil`}</title>
+      </Helmet>
       <div className="hero-content">
         <div className="card w-full min-w-sm shadow-2xl bg-base-100 py-20">
           <h1 className="text-5xl text-center font-bold">Login</h1>

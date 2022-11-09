@@ -1,11 +1,12 @@
 import React from 'react';
 
-const ReviewTable = ({ review }) => {
+const ReviewTable = ({ review, handleDeleteReview }) => {
   const { reviewerName, email, reviewerImg, message, serviceName } = review;
+
   return (
     <tr>
       <th>
-        <button className='btn btn-xs'>Delete</button>
+        <button onClick={handleDeleteReview} className='btn btn-xs'>Delete</button>
       </th>
       <td>
         <div className="flex items-center space-x-3">

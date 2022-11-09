@@ -5,13 +5,16 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import AuthProvider from './Contexts/AuthProvider/AuthProvider';
 import { Toaster } from 'react-hot-toast';
+import { HelmetProvider } from 'react-helmet-async';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <AuthProvider>
-      <App />
-      <Toaster position="top-center" reverseOrder={false} />
+      <HelmetProvider>
+        <App />
+        <Toaster position="top-center" reverseOrder={false} />
+      </HelmetProvider>
     </AuthProvider>
   </React.StrictMode>
 );

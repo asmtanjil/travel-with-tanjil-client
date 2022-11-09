@@ -1,6 +1,7 @@
 import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
 import { AuthContext } from '../../Contexts/AuthProvider/AuthProvider';
+import { Helmet } from 'react-helmet-async';
 
 const Register = () => {
   const { createUser, updateUserProfile } = useContext(AuthContext)
@@ -26,6 +27,9 @@ const Register = () => {
   //grid md:grid-cols-2 flex-col lg:flex-row
   return (
     <div className="hero w-full my-20">
+      <Helmet>
+        <title>Sign Up - {`Travel With Tanjil`}</title>
+      </Helmet>
       <div className="hero-content ">
         <div className="card w-full max-w-lg shadow-2xl bg-base-100 py-20">
           <h1 className="text-5xl text-center font-bold">Sign Up</h1>

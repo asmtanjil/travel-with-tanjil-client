@@ -2,16 +2,21 @@ import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import HomeSections from './HomeSections';
 import ServiceCard from './ServiceCard';
+import { Helmet } from 'react-helmet-async';
+
 
 const Home = () => {
   const [services, setServices] = useState([])
   useEffect(() => {
-    fetch('http://localhost:5000/homeServices')
+    fetch('https://travel-with-tanjil-server.vercel.app/homeServices')
       .then(res => res.json())
       .then(data => setServices(data))
   }, [])
   return (
     <div className='mx-4'>
+      <Helmet>
+        <title>Home - {`Travel With Tanjil`}</title>
+      </Helmet>
       <div className='grid gap-8 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mt-20'>
         {
           services?.length && services.map(service => <ServiceCard

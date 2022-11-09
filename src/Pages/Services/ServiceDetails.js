@@ -4,12 +4,20 @@ import { PhotoProvider, PhotoView } from 'react-photo-view';
 import 'react-photo-view/dist/react-photo-view.css';
 import { AuthContext } from '../../Contexts/AuthProvider/AuthProvider';
 import Review from './Review';
+import { Helmet } from 'react-helmet-async';
 
 const ServiceDetails = () => {
   const { image, details, title, _id, rating, price, reviews } = useLoaderData();
   const { user } = useContext(AuthContext);
+  // console.log(_id)
+  const [userReviews, setUserReviews] = useState([])
 
-  const [userReview, setUserReviews] = useState([])
+  //loading specific reviews data from server
+  useEffect(() => {
+    fetch(`http://localhost:5000/reviews/${_id}`)
+      .then(res => res.json())
+      .then(data => setUserReviews(data))
+  }, [_id])
 
 
   const handleReview = e => {
@@ -20,21 +28,21 @@ const ServiceDetails = () => {
     const message = form.message.value;
     const reviewerImg = user?.photoURL;
 
-    const reviewDetail = {
+    const reviews = {
       serviceName: title,
-      serviceId: _id,
+      service: _id,
       reviewerName: name,
       email,
       message,
       reviewerImg
     }
 
-    fetch('http://localhost:5000/reviews', {
+    fetch('https://travel-with-tanjil-server.vercel.app/reviews', {
       method: 'POST',
       headers: {
         'content-type': 'application/json'
       },
-      body: JSON.stringify(reviewDetail)
+      body: JSON.stringify(reviews)
     })
       .then(res => res.json())
       .then(data => {
@@ -44,18 +52,13 @@ const ServiceDetails = () => {
           form.reset()
         }
       })
-
   }
-
-
-  useEffect(() => {
-    fetch(`http://localhost:5000/reviews/${_id}`)
-      .then(res => res.json())
-      .then(data => setUserReviews(data))
-  }, [_id])
 
   return (
     <PhotoProvider>
+      <Helmet>
+        <title>ServiceDetails - {`Travel With Tanjil`}</title>
+      </Helmet>
       <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-12'>
         <div>
           <div className="hero min-h-screen m-2">
@@ -115,7 +118,7 @@ const ServiceDetails = () => {
           <div>
             <h2>Reviews</h2>
             {
-              userReview?.length && userReview.map(usrReview => <Review
+              userReviews?.length && userReviews.map(usrReview => <Review
                 key={usrReview._id}
                 usrReview={usrReview}
               ></Review>)

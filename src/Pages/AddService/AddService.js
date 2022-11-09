@@ -1,6 +1,7 @@
 import React, { useContext } from 'react';
 import toast from 'react-hot-toast';
 import { AuthContext } from '../../Contexts/AuthProvider/AuthProvider';
+import { Helmet } from 'react-helmet-async';
 
 const AddService = () => {
   const { user } = useContext(AuthContext)
@@ -25,7 +26,7 @@ const AddService = () => {
       rating
     }
 
-    fetch('http://localhost:5000/services', {
+    fetch('https://travel-with-tanjil-server.vercel.app/services', {
       method: 'POST',
       headers: {
         'content-type': 'application/json'
@@ -43,6 +44,9 @@ const AddService = () => {
   }
   return (
     <div>
+      <Helmet>
+        <title>Add Service - {`Travel With Tanjil`}</title>
+      </Helmet>
       <h1 className='text-3xl text-slate-500 text-center font-bold my-8'>Enter Your Desired Service</h1>
       <form onSubmit={handleAddService}>
 
