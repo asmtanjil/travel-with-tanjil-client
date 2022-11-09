@@ -8,12 +8,9 @@ const Register = () => {
   const { createUser, updateUserProfile } = useContext(AuthContext)
 
   //Loading For Register Page
-  const [loading, setLoading] = useState(false)
+  const [loading, setLoading] = useState(true)
   useEffect(() => {
-    setLoading(true)
-    setTimeout(() => {
-      setLoading(false)
-    }, 250)
+    setLoading(false)
   }, [])
 
   //Create User

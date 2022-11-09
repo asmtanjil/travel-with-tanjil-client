@@ -14,12 +14,9 @@ const Login = () => {
   const location = useLocation()
 
   //Loading For Login Page
-  const [loading, setLoading] = useState(false)
+  const [loading, setLoading] = useState(true)
   useEffect(() => {
-    setLoading(true)
-    setTimeout(() => {
-      setLoading(false)
-    }, 250)
+    setLoading(false)
   }, [])
 
   //google auth provider
