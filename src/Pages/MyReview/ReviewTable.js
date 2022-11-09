@@ -5,9 +5,7 @@ const ReviewTable = ({ review }) => {
   return (
     <tr>
       <th>
-        <label>
-          <input type="checkbox" className="checkbox" />
-        </label>
+        <button className='btn btn-xs'>Delete</button>
       </th>
       <td>
         <div className="flex items-center space-x-3">
@@ -25,7 +23,7 @@ const ReviewTable = ({ review }) => {
       <td>
         {serviceName}
       </td>
-      <td>{message}</td>
+      <td className='break-normal'>{message}</td>
       <th>
         <button className="btn btn-ghost btn-xs">Update</button>
       </th>

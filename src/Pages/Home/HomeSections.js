@@ -1,10 +1,4 @@
 import React from 'react';
-import img1 from '../../assests/adda.jpg';
-import img2 from '../../assests/darjeeling.jpg';
-import img3 from '../../assests/kashmir.jpg';
-import img4 from '../../assests/nepal1.jpg';
-import img5 from '../../assests/peak.jpg';
-import img6 from '../../assests/trip.jpg';
 
 const HomeSections = () => {
   return (
@@ -52,12 +46,12 @@ const HomeSections = () => {
       <div>
         <h2 className='text-4xl font-bold text-amber-400 mb-4'>Photography About My Journey</h2>
         <div className='gird gap-12 grid-cols-1 md:grid-cols-2'>
-          <img src={img2} alt="" style={{ width: '100%' }} className='my-4 rounded-lg' />
-          <img src={img3} alt="" style={{ width: '100%' }} className='my-4 rounded-lg' />
-          <img src={img4} alt="" style={{ width: '100%' }} className='my-4 rounded-lg' />
-          <img src={img1} alt="" style={{ width: '100%' }} className='my-4 rounded-lg' />
-          <img src={img5} alt="" style={{ width: '100%' }} className='my-4 rounded-lg' />
-          <img src={img6} alt="" style={{ width: '100%' }} className='my-4 rounded-lg' />
+          <img src={'https://i.ibb.co/2vJR7Fm/adda.jpg'} alt="" style={{ width: '100%' }} className='my-4 rounded-lg' />
+          <img src={'https://i.ibb.co/nDSbqft/nepal1.jpg'} alt="" style={{ width: '100%' }} className='my-4 rounded-lg' />
+          <img src={'https://i.ibb.co/2WhYhmb/kashmir.jpg'} alt="" style={{ width: '100%' }} className='my-4 rounded-lg' />
+          <img src={'https://i.ibb.co/CM1pxDF/peak.jpg'} alt="" style={{ width: '100%' }} className='my-4 rounded-lg' />
+          <img src={'https://i.ibb.co/gZW5Th5/trip.jpg'} alt="" style={{ width: '100%' }} className='my-4 rounded-lg' />
+          <img src={'https://i.ibb.co/RgpRcH5/darjeeling.jpg'} alt="" style={{ width: '100%' }} className='my-4 rounded-lg' />
         </div>
       </div>
     </div>

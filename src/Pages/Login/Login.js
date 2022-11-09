@@ -1,6 +1,6 @@
 import { GoogleAuthProvider } from 'firebase/auth';
 import React, { useContext, useState } from 'react';
-// import { FaBeer } from 'react-icons/fa';
+import { FaBeer, FaGoogle } from 'react-icons/fa';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { AuthContext } from '../../Contexts/AuthProvider/AuthProvider';
 
@@ -76,7 +76,7 @@ const Login = () => {
             </div>
             <p className='text-center my-2'>Are you New Here? Please <Link className='text-orange-500 font-bold' to='/signup'>Sign Up</Link></p>
             <button className='btn btn-success' onClick={handleGoogleSignIn}>
-              Login With Google
+              <FaGoogle className='mr-2'></FaGoogle> Login With Google
             </button>
           </form>
         </div>

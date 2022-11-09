@@ -1,13 +1,16 @@
-import React, { useContext } from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 import { Link, useLoaderData } from 'react-router-dom';
 import { PhotoProvider, PhotoView } from 'react-photo-view';
 import 'react-photo-view/dist/react-photo-view.css';
 import { AuthContext } from '../../Contexts/AuthProvider/AuthProvider';
+import Review from './Review';
 
 const ServiceDetails = () => {
   const { image, details, title, _id, rating, price, reviews } = useLoaderData();
   const { user } = useContext(AuthContext);
-  console.log(user)
+
+  const [userReview, setUserReviews] = useState([])
+
 
   const handleReview = e => {
     e.preventDefault()
@@ -44,6 +47,13 @@ const ServiceDetails = () => {
 
   }
 
+
+  useEffect(() => {
+    fetch(`http://localhost:5000/reviews/${_id}`)
+      .then(res => res.json())
+      .then(data => setUserReviews(data))
+  }, [_id])
+
   return (
     <PhotoProvider>
       <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-12'>
@@ -75,8 +85,7 @@ const ServiceDetails = () => {
               <img className='rounded-full' style={{ width: 40, height: 40 }} src={reviews.rev1.img} alt="" />
               <p className='font-semibold'>{reviews.rev1.name}</p>
             </div>
-            <p className='my-4'>{reviews.rev1.message}</p>
-            <p className='text-gray-500 my-2'>Rating: {reviews.rev1.rating}</p>
+            <p className='my-2'>{reviews.rev1.message}</p>
           </div>
 
           <div className='p-4 border-2 mb-4'>
@@ -84,8 +93,7 @@ const ServiceDetails = () => {
               <img className='rounded-full' style={{ width: 40, height: 40 }} src={reviews.rev2.img} alt="" />
               <p className='font-semibold'>{reviews.rev2.name}</p>
             </div>
-            <p className='my-4'>{reviews.rev2.message}</p>
-            <p className='text-gray-500 my-2'>Rating: {reviews.rev2.rating}</p>
+            <p className='my-2'>{reviews.rev2.message}</p>
           </div>
 
           <div className='p-4 border-2 mb-4'>
@@ -93,8 +101,7 @@ const ServiceDetails = () => {
               <img className='rounded-full' style={{ width: 40, height: 40 }} src={reviews.rev3.img} alt="" />
               <p className='font-semibold'>{reviews.rev3.name}</p>
             </div>
-            <p className='my-4'>{reviews.rev3.message}</p>
-            <p className='text-gray-500 my-2'>Rating: {reviews.rev3.rating}</p>
+            <p className='my-2'>{reviews.rev3.message}</p>
           </div>
 
           <div className='p-4 border-2 mb-4'>
@@ -102,8 +109,17 @@ const ServiceDetails = () => {
               <img className='rounded-full' style={{ width: 40, height: 40 }} src={reviews.rev4.img} alt="" />
               <p className='font-semibold'>{reviews.rev4.name}</p>
             </div>
-            <p className='my-4'>{reviews.rev4.message}</p>
-            <p className='text-gray-500 my-2'>Rating: {reviews.rev4.rating}</p>
+            <p className='my-2'>{reviews.rev4.message}</p>
+          </div>
+
+          <div>
+            <h2>Reviews</h2>
+            {
+              userReview?.length && userReview.map(usrReview => <Review
+                key={usrReview._id}
+                usrReview={usrReview}
+              ></Review>)
+            }
           </div>
 
           {

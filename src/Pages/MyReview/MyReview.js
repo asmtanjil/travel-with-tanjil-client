@@ -13,34 +13,39 @@ const MyReview = () => {
     <div>
       <h2>All Reviews {reviews?.length}</h2>
 
-      <div className="overflow-x-auto w-full">
-        <table className="table w-full">
-          <thead>
-            <tr>
-              <th>
-                <label>
-                  <input type="checkbox" className="checkbox" />
-                </label>
-              </th>
-              <th>Name</th>
-              <th>Service Name</th>
-              <th>Review</th>
-              <th></th>
-            </tr>
-          </thead>
-          <tbody>
-            <>
-              {
-                reviews?.length && reviews.map(review => <ReviewTable
-                  key={review._id}
-                  review={review}
-                ></ReviewTable>)
-              }
-            </>
-          </tbody>
+      {
+        reviews?.length ?
+          <>
+            <div className="overflow-x-auto w-full">
+              <table className="table w-full">
+                <thead>
+                  <tr>
+                    {/* <th>Delete</th> */}
+                    <th>Name</th>
+                    <th>Service Name</th>
+                    <th>Review</th>
+                    <th></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <>
+                    {
+                      reviews?.length && reviews.map(review => <ReviewTable
+                        key={review._id}
+                        review={review}
+                      ></ReviewTable>)
+                    }
+                  </>
+                </tbody>
 
-        </table>
-      </div>
+              </table>
+            </div>
+          </>
+          :
+          <div className='mx-auto my-72 text-center flex justify-center'>
+            <h1 className='text-5xl text-violet-500 font-bold'>Reviews Not Found</h1>
+          </div>
+      }
     </div>
   );
 };
