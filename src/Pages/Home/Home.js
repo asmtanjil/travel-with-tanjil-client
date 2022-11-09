@@ -27,7 +27,7 @@ const Home = () => {
           <div className="hero-content text-center text-neutral-content">
             <div className="max-w-md">
               <h1 className="mb-5 text-5xl font-bold">Travell With Tanjil</h1>
-              <p className="mb-5">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
+              <p className="mb-5"></p>
               <button className="btn btn-primary text-white"><Link to='/services'>Start Exploring</Link></button>
             </div>
           </div>
