@@ -16,7 +16,7 @@ const ServicesCard = ({ service }) => {
           <p className='font-semibold text-amber-500 text-xl'>Price: BDT {price}</p>
           <p className='text-justify'>
             {
-              details.length > 100 ?
+              details?.length > 100 ?
                 <>{details.slice(0, 100) + '...'}</>
                 :
                 <>{details}</>

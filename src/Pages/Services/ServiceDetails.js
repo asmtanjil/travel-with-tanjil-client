@@ -5,8 +5,44 @@ import 'react-photo-view/dist/react-photo-view.css';
 import { AuthContext } from '../../Contexts/AuthProvider/AuthProvider';
 
 const ServiceDetails = () => {
-  const { image, details, title, rating, price, reviews } = useLoaderData();
-  const { user } = useContext(AuthContext)
+  const { image, details, title, _id, rating, price, reviews } = useLoaderData();
+  const { user } = useContext(AuthContext);
+  console.log(user)
+
+  const handleReview = e => {
+    e.preventDefault()
+    const form = e.target;
+    const email = user?.email;
+    const name = user?.displayName;
+    const message = form.message.value;
+    const reviewerImg = user?.photoURL;
+
+    const reviewDetail = {
+      serviceName: title,
+      serviceId: _id,
+      reviewerName: name,
+      email,
+      message,
+      reviewerImg
+    }
+
+    fetch('http://localhost:5000/reviews', {
+      method: 'POST',
+      headers: {
+        'content-type': 'application/json'
+      },
+      body: JSON.stringify(reviewDetail)
+    })
+      .then(res => res.json())
+      .then(data => {
+        console.log(data)
+        if (data.acknowledged) {
+          alert('Review Posted')
+          form.reset()
+        }
+      })
+
+  }
 
   return (
     <PhotoProvider>
@@ -73,8 +109,8 @@ const ServiceDetails = () => {
           {
             user?.email ?
               <div>
-                <form className="form-control">
-                  <textarea name='review' className="textarea textarea-bordered w-full h-40" placeholder="Write Your Reviews"></textarea>
+                <form onSubmit={handleReview} className="form-control">
+                  <textarea name='message' className="textarea textarea-bordered w-full h-40" placeholder="Write Your Reviews"></textarea>
                   <input className='btn btn-primary my-2 text-white' type="submit" value="Post Your Review" />
                 </form>
               </div>

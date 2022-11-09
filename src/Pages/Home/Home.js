@@ -14,7 +14,7 @@ const Home = () => {
     <div className='mx-4'>
       <div className='grid gap-8 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mt-20'>
         {
-          services.map(service => <ServiceCard
+          services?.length && services.map(service => <ServiceCard
             key={service._id}
             service={service}
           ></ServiceCard>)
@@ -26,8 +26,9 @@ const Home = () => {
           <div className="hero-overlay bg-opacity-60"></div>
           <div className="hero-content text-center text-neutral-content">
             <div className="max-w-md">
-              <h1 className="mb-5 text-5xl font-bold">Travell With Tanjil</h1>
-              <p className="mb-5"></p>
+              <h1 className="mb-5 text-5xl font-bold">Travel With Tanjil</h1>
+              <p className="mb-5">I am providing you some real amazing services. <br />
+                You can book air tickets, book hotel, take travel packages through my website. More Features are coming soon.</p>
               <button className="btn btn-primary text-white"><Link to='/services'>Start Exploring</Link></button>
             </div>
           </div>
