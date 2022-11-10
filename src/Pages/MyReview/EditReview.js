@@ -4,7 +4,7 @@ import { useLoaderData, useNavigate } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
 
 const EditReview = () => {
-  const { service } = useLoaderData()
+  const { _id } = useLoaderData()
   const navigate = useNavigate()
 
   const handleEdit = e => {
@@ -12,10 +12,9 @@ const EditReview = () => {
     const message = e.target.message.value
     const review = {
       message,
-      service: service
     }
 
-    fetch(` https://travel-with-tanjil-server.vercel.app/reviews/${service}`, {
+    fetch(`https://travel-with-tanjil-server.vercel.app/reviews/${_id}`, {
       method: 'PATCH',
       headers: {
         'content-type': 'application/json'

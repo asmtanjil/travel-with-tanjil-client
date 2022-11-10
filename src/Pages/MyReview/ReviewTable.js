@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 const ReviewTable = ({ review, handleDeleteReview }) => {
-  const { reviewerName, service, email, reviewerImg, message, serviceName } = review;
+  const { reviewerName, _id, email, reviewerImg, message, serviceName } = review;
 
   return (
     <div className="card text-justify w-96 bg-base-100 shadow-xl p-4 my-4">
@@ -18,7 +18,7 @@ const ReviewTable = ({ review, handleDeleteReview }) => {
         <p><span className='font-semibold'>My Review: <br /> </span>{message}</p>
         <div className="card-actions justify-end">
           <button onClick={handleDeleteReview} className='btn btn-xs'>Delete</button>
-          <Link to={`/editReview/${service}`}><button className='btn btn-xs'>Edit</button></Link>
+          <Link to={`/editReview/${_id}`}><button className='btn btn-xs'>Edit</button></Link>
         </div>
       </div>
     </div>

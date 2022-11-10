@@ -1,24 +1,24 @@
-import React, { useContext } from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 import { Link, useLoaderData } from 'react-router-dom';
 import { PhotoProvider, PhotoView } from 'react-photo-view';
 import 'react-photo-view/dist/react-photo-view.css';
 import { AuthContext } from '../../Contexts/AuthProvider/AuthProvider';
 import { Helmet } from 'react-helmet-async';
 import toast from 'react-hot-toast';
-// import Review from './Review';
+import Review from './Review';
 
 const ServiceDetails = () => {
   const { image, details, title, _id, rating, price, reviews } = useLoaderData();
   const { user } = useContext(AuthContext);
-  // const [userReviews, setUserReviews] = useState([])
+  const [userReviews, setUserReviews] = useState([])
 
   // loading specific reviews data from server
-  // useEffect(() => {
-  //   fetch(`http://localhost:5000/reviews/${_id}`)
-  //     .then(res => res.json())
-  //     .then(data => setUserReviews(data))
-  //     .catch(err => console.error(err))
-  // }, [_id])
+  useEffect(() => {
+    fetch(` https://travel-with-tanjil-server.vercel.app/reviews/${_id}`)
+      .then(res => res.json())
+      .then(data => setUserReviews(data))
+      .catch(err => console.error(err))
+  }, [_id])
 
   const handleReview = e => {
     e.preventDefault()
@@ -49,8 +49,6 @@ const ServiceDetails = () => {
         console.log(data)
         if (data.acknowledged) {
           toast.success('Review Posted to MyReview SuccessFully..!!')
-          // console.log(data)
-          // setUserReviews(data)
           form.reset()
         }
       })
@@ -119,11 +117,12 @@ const ServiceDetails = () => {
             </div>
 
             <div>
-              {/* {
-                userReviews.length && userReviews.map(rev => <Review
+              {
+                userReviews.map(rev => <Review
+                  key={rev._id}
                   rev={rev}
                 ></Review>)
-              } */}
+              }
             </div>
           </div>
 
