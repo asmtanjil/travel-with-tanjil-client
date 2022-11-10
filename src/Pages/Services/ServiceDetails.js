@@ -1,4 +1,4 @@
-import React, { useContext, useEffect, useState } from 'react';
+import React, { useContext } from 'react';
 import { Link, useLoaderData } from 'react-router-dom';
 import { PhotoProvider, PhotoView } from 'react-photo-view';
 import 'react-photo-view/dist/react-photo-view.css';
@@ -10,7 +10,7 @@ import toast from 'react-hot-toast';
 const ServiceDetails = () => {
   const { image, details, title, _id, rating, price, reviews } = useLoaderData();
   const { user } = useContext(AuthContext);
-  const [userReviews, setUserReviews] = useState([])
+  // const [userReviews, setUserReviews] = useState([])
 
   // loading specific reviews data from server
   // useEffect(() => {
