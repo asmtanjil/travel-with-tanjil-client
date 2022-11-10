@@ -136,7 +136,7 @@ const ServiceDetails = () => {
                 </form>
               </div>
               :
-              <p className='text-xl'>Please <Link to='/login' className='font-semibold text-amber-500'>Login</Link> to Post Your Review</p>
+              <p className='text-3xl font-bold text-center my-4'>Please <Link to='/login' className='font-semibold text-amber-500'>Login</Link> to Post Your Review</p>
           }
 
         </div>

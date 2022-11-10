@@ -15,17 +15,20 @@ const AuthProvider = ({ children }) => {
     return createUserWithEmailAndPassword(auth, email, password)
   }
 
+
   //Sign In
   const signIn = (email, password) => {
     setLoading(true);
     return signInWithEmailAndPassword(auth, email, password)
   }
 
+
   //sign is with google
   const googleSignIn = (provider) => {
     setLoading(true);
     return signInWithPopup(auth, provider)
   }
+
 
   //Update Profile
   const updateUserProfile = (name, photoURL) => {
@@ -35,6 +38,7 @@ const AuthProvider = ({ children }) => {
       photoURL: photoURL
     })
   }
+
 
   //Sign Out
   const logOut = () => {

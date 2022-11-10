@@ -1,6 +1,7 @@
 import React from 'react';
 import toast from 'react-hot-toast';
 import { useLoaderData, useNavigate } from 'react-router-dom';
+import { Helmet } from 'react-helmet-async';
 
 const EditReview = () => {
   const { service } = useLoaderData()
@@ -32,6 +33,9 @@ const EditReview = () => {
   }
   return (
     <div className='my-8'>
+      <Helmet>
+        <title>Edit Review - {`Travel With Tanjil`}</title>
+      </Helmet>
       <div className='max-w-screen-xl mx-auto w-4/6'>
         <h2 className='text-center text-3xl font-bold text-indigo-500 my-4'>Edit Your Review</h2>
         <form onSubmit={handleEdit}>
