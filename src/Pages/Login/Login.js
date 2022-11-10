@@ -36,7 +36,26 @@ const Login = () => {
         console.log(user)
         form.reset();
         toast.success('I am logged in now..!!!')
-        navigate(from, { replace: true })
+
+        const currentUser = {
+          email: user.email
+        }
+        console.log(currentUser)
+
+        // get jwt token
+        fetch('https://travel-with-tanjil-server.vercel.app/jwt', {
+          method: 'POST',
+          headers: {
+            'content-type': 'application/json'
+          },
+          body: JSON.stringify(currentUser)
+        })
+          .then(res => res.json())
+          .then(data => {
+            console.log(data)
+            localStorage.setItem('travel-token', data.token);
+            navigate(from, { replace: true });
+          });
       })
       .catch(err => console.error(err))
   }
@@ -55,7 +74,7 @@ const Login = () => {
       })
   }
   return (
-    <div className="w-75 lg:w-2/5 mx-auto my-20">
+    <div className="w-75 md:w-2/5 lg:w-2/5 mx-auto my-20">
       <Helmet>
         <title>Login - {`Travel With Tanjil`}</title>
       </Helmet>

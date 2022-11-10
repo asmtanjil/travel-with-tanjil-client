@@ -34,7 +34,7 @@ const Register = () => {
       .catch(err => console.error(err))
   }
   return (
-    <div className="w-75 lg:w-2/5 mx-auto my-20">
+    <div className="w-75 md:w-2/5 lg:w-2/5 mx-auto my-20">
       <Helmet>
         <title>Sign Up - {`Travel With Tanjil`}</title>
       </Helmet>

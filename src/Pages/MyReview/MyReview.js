@@ -7,25 +7,31 @@ import GridLoader from "react-spinners/GridLoader";
 
 const MyReview = () => {
   const [reviews, setReviews] = useState([])
-  const { user } = useContext(AuthContext)
+  const { user, logOut } = useContext(AuthContext)
 
   //Loading For My Review Page
-  const [loading, setLoading] = useState(false)
+  const [loading, setLoading] = useState(true)
   useEffect(() => {
-    setLoading(true)
-    setTimeout(() => {
-      setLoading(false)
-    }, 1000)
+    setLoading(false)
   }, [])
 
   //Load All Reviews Data Based On Email Query
   useEffect(() => {
     if (user?.email) {
-      fetch(`https://travel-with-tanjil-server.vercel.app/reviews?email=${user?.email}`)
-        .then(res => res.json())
+      fetch(`https://travel-with-tanjil-server.vercel.app/reviews?email=${user?.email}`, {
+        headers: {
+          authorization: `Bearer ${localStorage.getItem('travel-token')}`
+        }
+      })
+        .then(res => {
+          if (res.status === 401 || res.status === 403) {
+            return logOut()
+          }
+          return res.json()
+        })
         .then(data => setReviews(data))
     }
-  }, [user?.email]);
+  }, [user?.email, logOut]);
 
 
   //Delete Review From DataBase
