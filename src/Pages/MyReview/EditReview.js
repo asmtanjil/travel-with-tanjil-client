@@ -33,10 +33,10 @@ const EditReview = () => {
   return (
     <div className='my-8'>
       <div className='max-w-screen-xl mx-auto w-4/6'>
-        <h2>Edit Your Form</h2>
+        <h2 className='text-center text-3xl font-bold text-indigo-500 my-4'>Edit Your Review</h2>
         <form onSubmit={handleEdit}>
-          <textarea name='message' className="textarea textarea-bordered w-full h-40" placeholder="Write Your Reviews"></textarea>
-          <input type="submit" value="Update" />
+          <textarea name='message' className="textarea textarea-bordered w-full h-40" placeholder="Update Your Review"></textarea>
+          <input className='btn btn-primary text-white' type="submit" value="Update Review" />
         </form>
       </div>
     </div>

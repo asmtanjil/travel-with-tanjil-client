@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { AuthContext } from '../../Contexts/AuthProvider/AuthProvider';
 import { Helmet } from 'react-helmet-async';
 import GridLoader from "react-spinners/GridLoader";
+import toast from 'react-hot-toast';
 
 const Register = () => {
   const { createUser, updateUserProfile } = useContext(AuthContext)
@@ -27,12 +28,13 @@ const Register = () => {
         const user = result.user;
         console.log(user)
         updateUserProfile(name, photoURL)
+        toast.success('Tomar Account Created!')
         form.reset();
       })
       .catch(err => console.error(err))
   }
   return (
-    <div className="hero w-full my-20">
+    <div className="w-75 lg:w-2/5 mx-auto my-20">
       <Helmet>
         <title>Sign Up - {`Travel With Tanjil`}</title>
       </Helmet>

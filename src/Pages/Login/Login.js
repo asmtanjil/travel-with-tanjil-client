@@ -5,11 +5,11 @@ import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { AuthContext } from '../../Contexts/AuthProvider/AuthProvider';
 import { Helmet } from 'react-helmet-async';
 import GridLoader from "react-spinners/GridLoader";
+import toast from 'react-hot-toast';
 
 
 const Login = () => {
   const { signIn, googleSignIn } = useContext(AuthContext)
-  const [error, setError] = useState('');
   const navigate = useNavigate()
   const location = useLocation()
 
@@ -35,6 +35,7 @@ const Login = () => {
         const user = result.user;
         console.log(user)
         form.reset();
+        toast.success('I am logged in now..!!!')
         navigate(from, { replace: true })
       })
       .catch(err => console.error(err))
@@ -46,16 +47,15 @@ const Login = () => {
       .then(result => {
         const user = result.user;
         console.log(user);
-        setError('')
+        toast.success('Google re Niya Asla..!!')
         navigate(from, { replace: true })
       })
       .catch(error => {
         console.error(error);
-        setError(error.message);
       })
   }
   return (
-    <div className="hero w-full my-20">
+    <div className="w-75 lg:w-2/5 mx-auto my-20">
       <Helmet>
         <title>Login - {`Travel With Tanjil`}</title>
       </Helmet>
@@ -82,7 +82,7 @@ const Login = () => {
                     </label>
                     <input type="password" name='password' placeholder="Your Password" className="input input-bordered" />
                     <label className="label">
-                      <Link to="/" className="label-text-alt link link-hover">Forgot password?</Link>
+                      <Link to="/signup" className="label-text-alt link link-hover">Forgot password?</Link>
                     </label>
                   </div>
 
