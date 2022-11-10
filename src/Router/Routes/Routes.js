@@ -5,6 +5,7 @@ import Blog from "../../Pages/Blog/Blog";
 import Error from "../../Pages/Error/Error";
 import Home from "../../Pages/Home/Home";
 import Login from "../../Pages/Login/Login";
+import EditReview from "../../Pages/MyReview/EditReview";
 import MyReview from "../../Pages/MyReview/MyReview";
 import Register from "../../Pages/Register/Register";
 import ServiceDetails from "../../Pages/Services/ServiceDetails";
@@ -49,6 +50,11 @@ const router = createBrowserRouter([
         path: '/blog',
         element: <Blog></Blog>
       },
+      {
+        path: '/editReview/:id',
+        loader: ({ params }) => fetch(` https://travel-with-tanjil-server.vercel.app/reviews/${params.id}`),
+        element: <EditReview></EditReview>
+      }
     ]
   },
   {

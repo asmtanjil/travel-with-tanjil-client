@@ -1,34 +1,27 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const ReviewTable = ({ review, handleDeleteReview }) => {
-  const { reviewerName, email, reviewerImg, message, serviceName } = review;
+  const { reviewerName, service, email, reviewerImg, message, serviceName } = review;
 
   return (
-    <tr>
-      <th>
-        <button onClick={handleDeleteReview} className='btn btn-xs'>Delete</button>
-      </th>
-      <td>
-        <div className="flex items-center space-x-3">
-          <div className="avatar">
-            <div className="mask mask-squircle w-12 h-12">
-              <img src={reviewerImg} alt="" />
-            </div>
-          </div>
-          <div>
-            <div className="font-bold">{reviewerName}</div>
-            <div className="text-sm opacity-50">{email}</div>
-          </div>
+    <div className="card text-justify w-96 bg-base-100 shadow-xl p-4 my-4">
+      <div className='flex gap-8 justify-center items-center'>
+        <figure><img className="mask mask-circle" src={reviewerImg} alt="" style={{ width: 80, height: 80 }} /></figure>
+        <div className='flex flex-col'>
+          <p className='font-bold'>{reviewerName}</p>
+          <p>{email}</p>
         </div>
-      </td>
-      <td>
-        {serviceName}
-      </td>
-      <td className='break-normal'>{message}</td>
-      <th>
-        <button className="btn btn-ghost btn-xs">Update</button>
-      </th>
-    </tr>
+      </div>
+      <div>
+        <h2 className="my-4">{serviceName}</h2>
+        <p><span className='font-semibold'>My Review: <br /> </span>{message}</p>
+        <div className="card-actions justify-end">
+          <button onClick={handleDeleteReview} className='btn btn-xs'>Delete</button>
+          <Link to={`/editReview/${service}`}><button className='btn btn-xs'>Edit</button></Link>
+        </div>
+      </div>
+    </div>
   );
 };
 

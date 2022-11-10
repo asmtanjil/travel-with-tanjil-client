@@ -29,7 +29,7 @@ const Home = () => {
       </Helmet>
       {
         loading ?
-          <GridLoader color={`#50DBB4`} loading={loading} size={50} />
+          <GridLoader color={`#50DBB4`} loading={loading} size={50} style={{ margin: ' auto' }} />
           :
           <>
             <div className='grid gap-8 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mt-20'>

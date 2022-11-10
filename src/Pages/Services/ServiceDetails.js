@@ -4,18 +4,21 @@ import { PhotoProvider, PhotoView } from 'react-photo-view';
 import 'react-photo-view/dist/react-photo-view.css';
 import { AuthContext } from '../../Contexts/AuthProvider/AuthProvider';
 import { Helmet } from 'react-helmet-async';
+import toast from 'react-hot-toast';
+import Review from './Review';
 
 const ServiceDetails = () => {
   const { image, details, title, _id, rating, price, reviews } = useLoaderData();
   const { user } = useContext(AuthContext);
-  const [userReviews, setUserReviews] = useState({})
+  const [userReviews, setUserReviews] = useState([])
 
   // loading specific reviews data from server
-  useEffect(() => {
-    fetch(`https://travel-with-tanjil-server.vercel.app/reviews/${_id}`)
-      .then(res => res.json())
-      .then(data => setUserReviews(data))
-  }, [_id])
+  // useEffect(() => {
+  //   fetch(`http://localhost:5000/reviews/${_id}`)
+  //     .then(res => res.json())
+  //     .then(data => setUserReviews(data))
+  //     .catch(err => console.error(err))
+  // }, [_id])
 
   const handleReview = e => {
     e.preventDefault()
@@ -45,8 +48,9 @@ const ServiceDetails = () => {
       .then(data => {
         console.log(data)
         if (data.acknowledged) {
-          alert('Review Posted')
-          // const remaining = userReviews.filter(rv => rv._id !== _id)
+          toast.success('Review Posted SuccessFully..!!')
+          // console.log(data)
+          // setUserReviews(data)
           form.reset()
         }
       })
@@ -115,7 +119,11 @@ const ServiceDetails = () => {
             </div>
 
             <div>
-
+              {/* {
+                userReviews.length && userReviews.map(rev => <Review
+                  rev={rev}
+                ></Review>)
+              } */}
             </div>
           </div>
 
