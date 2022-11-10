@@ -39,9 +39,9 @@ const MyReview = () => {
         .then(data => {
           console.log(data)
           if (data.deletedCount > 0) {
-            toast.success('Review Deleted Successfully')
             const remaining = reviews.filter(rev => rev._id !== id)
             setReviews(remaining)
+            toast.success('Review Deleted Successfully')
           }
         })
     }
@@ -57,9 +57,10 @@ const MyReview = () => {
           <GridLoader color={`#50DBB4`} loading={loading} size={50} />
           :
           <>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 m-12">
-              {
-                reviews.length ?
+
+            {
+              reviews.length ?
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 m-12">
                   <>
                     {
                       reviews?.length && reviews.map(review => <ReviewTable
@@ -69,12 +70,13 @@ const MyReview = () => {
                       ></ReviewTable>)
                     }
                   </>
-                  :
-                  <div className='mx-auto my-60 text-center'>
-                    <h1 className='mr-4 text-6xl text-indigo-600 font-bold'>No Reviews Found</h1>
-                  </div>
-              }
-            </div>
+                </div>
+                :
+                <div className='mx-auto my-60 text-center'>
+                  <h1 className='mr-4 text-6xl text-indigo-600 font-bold'>No Reviews Found</h1>
+                </div>
+            }
+
           </>
       }
     </div >

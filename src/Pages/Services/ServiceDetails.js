@@ -5,7 +5,7 @@ import 'react-photo-view/dist/react-photo-view.css';
 import { AuthContext } from '../../Contexts/AuthProvider/AuthProvider';
 import { Helmet } from 'react-helmet-async';
 import toast from 'react-hot-toast';
-import Review from './Review';
+// import Review from './Review';
 
 const ServiceDetails = () => {
   const { image, details, title, _id, rating, price, reviews } = useLoaderData();
@@ -48,7 +48,7 @@ const ServiceDetails = () => {
       .then(data => {
         console.log(data)
         if (data.acknowledged) {
-          toast.success('Review Posted SuccessFully..!!')
+          toast.success('Review Posted to MyReview SuccessFully..!!')
           // console.log(data)
           // setUserReviews(data)
           form.reset()
