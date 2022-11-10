@@ -19,37 +19,38 @@ const MyReview = () => {
     }
   }, [user?.email]);
 
-  /*
+  //Delete Review From DataBase
+  const handleDeleteReview = id => {
+    const proceed = window.confirm('Are you sure ypu want to delete your review?');
     if (proceed) {
-      fetch(`http://localhost:5000/reviews/${id}`, {
-        method: 'DELETE',
+      fetch(`https://travel-with-tanjil-server.vercel.app/reviews/${id}`, {
+        method: 'DELETE'
       })
         .then(res => res.json())
         .then(data => {
           console.log(data)
           if (data.deletedCount > 0) {
-            toast('Review Deleted Successfully')
+            toast.success('Review Deleted Successfully')
             const remaining = reviews.filter(rev => rev._id !== id)
             setReviews(remaining)
           }
         })
-        
     }
-  */
-
-  //Delete Review From DataBase
-  const handleDeleteReview = id => {
-    const proceed = window.confirm('Are you sure ypu want to delete your review?');
-
-    if (proceed) {
-      fetch(`http://localhost:5000/reviews/${id}`, {
-        method: 'DELETE'
-      })
-        .then(res => res.json())
-        .then(data => console.log(data))
-    }
-
   }
+
+  // const handleUpdateReview = id => {
+  //   fetch(`https://travel-with-tanjil-server.vercel.app/reviews/${id}`,{
+  //     method: 'PATCH',
+  //     headers: {
+  //       'content-type' : 'application/json'
+  //     },
+  //     body: JSON.stringify()
+  //   })
+  //     .then(res => res.json())
+  //     .then(data => {
+  //       console.log(data)
+  //     })
+  // }
 
 
   return (
@@ -75,7 +76,7 @@ const MyReview = () => {
               reviews?.length && reviews.map(review => <ReviewTable
                 key={review._id}
                 review={review}
-                handleDeleteReview={handleDeleteReview}
+                handleDeleteReview={() => handleDeleteReview(review._id)}
               ></ReviewTable>)
             }
           </tbody>

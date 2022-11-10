@@ -3,22 +3,19 @@ import { Link, useLoaderData } from 'react-router-dom';
 import { PhotoProvider, PhotoView } from 'react-photo-view';
 import 'react-photo-view/dist/react-photo-view.css';
 import { AuthContext } from '../../Contexts/AuthProvider/AuthProvider';
-import Review from './Review';
 import { Helmet } from 'react-helmet-async';
 
 const ServiceDetails = () => {
   const { image, details, title, _id, rating, price, reviews } = useLoaderData();
   const { user } = useContext(AuthContext);
-  // console.log(_id)
-  const [userReviews, setUserReviews] = useState([])
+  const [userReviews, setUserReviews] = useState({})
 
-  //loading specific reviews data from server
+  // loading specific reviews data from server
   useEffect(() => {
-    fetch(`http://localhost:5000/reviews/${_id}`)
+    fetch(`https://travel-with-tanjil-server.vercel.app/reviews/${_id}`)
       .then(res => res.json())
       .then(data => setUserReviews(data))
   }, [_id])
-
 
   const handleReview = e => {
     e.preventDefault()
@@ -49,6 +46,7 @@ const ServiceDetails = () => {
         console.log(data)
         if (data.acknowledged) {
           alert('Review Posted')
+          // const remaining = userReviews.filter(rv => rv._id !== _id)
           form.reset()
         }
       })
@@ -83,46 +81,42 @@ const ServiceDetails = () => {
         <div className='mr-4'>
           <h2 className='text-2xl font-bold my-4 text-center'>Reviews From Users</h2>
 
-          <div className='p-4 border-2 mb-4'>
-            <div className='flex justify-start gap-4'>
-              <img className='rounded-full' style={{ width: 40, height: 40 }} src={reviews.rev1.img} alt="" />
-              <p className='font-semibold'>{reviews.rev1.name}</p>
-            </div>
-            <p className='my-2'>{reviews.rev1.message}</p>
-          </div>
-
-          <div className='p-4 border-2 mb-4'>
-            <div className='flex justify-start gap-4'>
-              <img className='rounded-full' style={{ width: 40, height: 40 }} src={reviews.rev2.img} alt="" />
-              <p className='font-semibold'>{reviews.rev2.name}</p>
-            </div>
-            <p className='my-2'>{reviews.rev2.message}</p>
-          </div>
-
-          <div className='p-4 border-2 mb-4'>
-            <div className='flex justify-start gap-4'>
-              <img className='rounded-full' style={{ width: 40, height: 40 }} src={reviews.rev3.img} alt="" />
-              <p className='font-semibold'>{reviews.rev3.name}</p>
-            </div>
-            <p className='my-2'>{reviews.rev3.message}</p>
-          </div>
-
-          <div className='p-4 border-2 mb-4'>
-            <div className='flex justify-start gap-4'>
-              <img className='rounded-full' style={{ width: 40, height: 40 }} src={reviews.rev4.img} alt="" />
-              <p className='font-semibold'>{reviews.rev4.name}</p>
-            </div>
-            <p className='my-2'>{reviews.rev4.message}</p>
-          </div>
-
           <div>
-            <h2>Reviews</h2>
-            {
-              userReviews?.length && userReviews.map(usrReview => <Review
-                key={usrReview._id}
-                usrReview={usrReview}
-              ></Review>)
-            }
+            <div className='p-4 border-2 mb-4'>
+              <div className='flex justify-start gap-4'>
+                <img className='rounded-full' style={{ width: 40, height: 40 }} src={reviews.rev1.img} alt="" />
+                <p className='font-semibold'>{reviews.rev1.name}</p>
+              </div>
+              <p className='my-2'>{reviews.rev1.message}</p>
+            </div>
+
+            <div className='p-4 border-2 mb-4'>
+              <div className='flex justify-start gap-4'>
+                <img className='rounded-full' style={{ width: 40, height: 40 }} src={reviews.rev2.img} alt="" />
+                <p className='font-semibold'>{reviews.rev2.name}</p>
+              </div>
+              <p className='my-2'>{reviews.rev2.message}</p>
+            </div>
+
+            <div className='p-4 border-2 mb-4'>
+              <div className='flex justify-start gap-4'>
+                <img className='rounded-full' style={{ width: 40, height: 40 }} src={reviews.rev3.img} alt="" />
+                <p className='font-semibold'>{reviews.rev3.name}</p>
+              </div>
+              <p className='my-2'>{reviews.rev3.message}</p>
+            </div>
+
+            <div className='p-4 border-2 mb-4'>
+              <div className='flex justify-start gap-4'>
+                <img className='rounded-full' style={{ width: 40, height: 40 }} src={reviews.rev4.img} alt="" />
+                <p className='font-semibold'>{reviews.rev4.name}</p>
+              </div>
+              <p className='my-2'>{reviews.rev4.message}</p>
+            </div>
+
+            <div>
+
+            </div>
           </div>
 
           {

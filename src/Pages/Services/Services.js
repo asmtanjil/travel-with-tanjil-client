@@ -22,7 +22,7 @@ const Services = () => {
   }, [])
 
   return (
-    <div>
+    <div className='mx-4'>
       {
         loading ?
           <GridLoader color={`#50DBB4`} loading={loading} size={50} style={{ margin: ' auto' }} />
