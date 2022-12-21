@@ -10,9 +10,12 @@ const MyReview = () => {
   const { user, logOut } = useContext(AuthContext)
 
   //Loading For My Review Page
-  const [loading, setLoading] = useState(true)
+  const [loading, setLoading] = useState(false)
   useEffect(() => {
-    setLoading(false)
+    setLoading(true)
+    setTimeout(() => {
+      setLoading(false)
+    }, 1500)
   }, [])
 
   //Load All Reviews Data Based On Email Query
@@ -60,16 +63,15 @@ const MyReview = () => {
       </Helmet>
       {
         loading ?
-          <GridLoader color={`#50DBB4`} loading={loading} size={50} />
+          <GridLoader color={`#50DBB4`} loading={loading} size={50} style={{ margin: ' auto' }} />
           :
           <>
-
             {
-              reviews.length ?
+              reviews ?
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 m-12">
                   <>
                     {
-                      reviews?.length && reviews.map(review => <ReviewTable
+                      reviews && reviews.map(review => <ReviewTable
                         key={review._id}
                         review={review}
                         handleDeleteReview={() => handleDeleteReview(review._id)}
@@ -82,7 +84,6 @@ const MyReview = () => {
                   <h1 className='mr-4 text-6xl text-indigo-600 font-bold'>No Reviews Found</h1>
                 </div>
             }
-
           </>
       }
     </div >

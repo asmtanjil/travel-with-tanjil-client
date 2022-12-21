@@ -20,7 +20,7 @@ const Home = () => {
     setLoading(true)
     setTimeout(() => {
       setLoading(false)
-    }, 1000)
+    }, 1500)
   }, [])
   return (
     <div className='mx-4'>
@@ -34,7 +34,7 @@ const Home = () => {
           <>
             <div className='grid gap-8 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mt-20'>
               {
-                services?.length && services.map(service => <ServiceCard
+                services && services.map(service => <ServiceCard
                   key={service._id}
                   service={service}
                 ></ServiceCard>)
@@ -42,6 +42,7 @@ const Home = () => {
             </div>
             <p className='text-center mt-12 mb-20'><button className='btn btn-primary text-white'><Link to='/services'>See All Services</Link></button></p>
             <div>
+              <h2 className='text-5xl my-12 font-bold text-center'>About Me</h2>
               <div className="hero min-h-screen" style={{ backgroundImage: `url("https://i.ibb.co/tXTqxnB/couple.jpg")` }}>
                 <div className="hero-overlay bg-opacity-60"></div>
                 <div className="hero-content text-center text-neutral-content">
