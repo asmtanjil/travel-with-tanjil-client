@@ -4,7 +4,7 @@ import './Footer.css'
 const Footer = () => {
   return (
     <div className='footer max-w-7xl mx-auto'>
-      <footer className="footer footer-center p-10 bg-black text-white rounded">
+      <footer className="footer footer-center p-10 bg-slate-900 text-white rounded">
         <div className="grid grid-flow-col gap-4">
           <a href='/' className="link link-hover">About us</a>
           <a href='/' className="link link-hover">Contact</a>

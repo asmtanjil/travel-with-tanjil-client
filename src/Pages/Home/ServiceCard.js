@@ -13,8 +13,8 @@ const ServiceCard = ({ service }) => {
         </PhotoView>
         <div className="card-body">
           <h2 className="card-title">{title}</h2>
-          <p className='font-semibold text-amber-500 text-xl'>Price: BDT {price}</p>
-          <p className='text-justify'>
+          <p className='font-semibold text-orange-500 text-xl'>Price: BDT {price}</p>
+          <p className='text-justify text-slate-400'>
             {
               details?.length > 100 ?
                 <>{details.slice(0, 100) + '...'}</>
